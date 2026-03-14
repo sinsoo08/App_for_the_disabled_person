@@ -5,8 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>브레인 코드</title>
     <link rel="icon" href="img/뇌.png" type="image/png">
+    <style>
+        header{
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        
+        body{
+            margin: 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            background-color: #333;
+            padding: 15px 30px;
+        }
+
+        .logo {
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .menu {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .menu a:hover {
+            color: #ffcc00;
+        }
+    </style>
 </head>
 <body>
+    <nav class="navbar">
+        <div class="logo">브레인 코드</div>
     
+        <ul class="menu">
+            <li><a href="#">홈</a></li>
+            <li><a href="#">게임</a></li>
+            <li><a href="#">마이페이지</a></li>
+            <li><a href="#">로그인/회원가입</a></li>
+        </ul>
+    </nav>
 </body>
 </html>
