@@ -111,46 +111,40 @@
 
         .container {
             max-width: 1200px;
-            display: flex;
-            justify-content: center;
-            gap: 30px;
             margin: 50px auto;
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            gap: clamp(10px, 3vw, 40px);
         }
 
         .box1{
-            width: 30vw;
-            height: 20vh;
+            flex: 1 1 250px;
+            max-width: 300px;
+
+            aspect-ratio: 5 / 4;
             background-color: #A4C8F0;
             border-radius: 20px;
-
-            position: relative;
-            left: 60px;
-            flex: 1;
-            max-width: 300px;
         }
 
         .box2{
-            width: 30vw;
-            height: 20vh;
+            flex: 1 1 250px;
+            max-width: 300px;
+
+            aspect-ratio: 5 / 4;
             background-color: #A4C8F0;
             border-radius: 20px;
-
-            position: relative;
-            left: 60px;
-            flex: 1;
-            max-width: 300px;
         }
 
         .box3{
-            width: 30vw;
-            height: 20vh;
+            flex: 1 1 250px;
+            max-width: 300px;
+
+            aspect-ratio: 5 / 4;
             background-color: #A4C8F0;
             border-radius: 20px;
-
-            position: relative;
-            left: 60px;
-            flex: 1;
-            max-width: 300px;
         }
     </style>
 </head>
