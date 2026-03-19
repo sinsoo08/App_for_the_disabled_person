@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>브레인 코드</title>
-    <link rel="icon" href="img/뇌.png" type="image/png">
+    <link rel="icon" href="img/뇌-파랑.png" type="image/png">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,12 +27,16 @@
         p{
             margin: 0;
             font-family: Pretendard, sans-serif;
+        }
+
+        h3{
+            font-family: Jua, sans-serif;
+            font-weight: 500;
 
             position: relative;
-            left: 80px;
 
-            margin-top: 0;
-            font-size: x-large;
+            margin-bottom: 10px;
+            font-size: 2rem;
         }
 
         h1, h2{
@@ -70,10 +74,31 @@
             transform: translateX(5px);
         }
 
+        .p1{
+            position: relative;
+            left: 80px;
+
+            margin-top: 0;
+            font-size: x-large;
+        }
+
+        .p2{
+            position: relative;
+
+            margin-top: 0;
+            font-size: 20px;
+        }
+
         .arrow {
             margin-left: 8px;
         }
         
+        .left{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
         .navbar {
             display: flex;
             justify-content: space-between;
@@ -83,16 +108,25 @@
             padding: 15px 30px;
         }
 
+        .brain-logo{
+            width: 75px;
+            height: 75px;
+        }
+
         .logo {
             color: white;
-            font-size: 20px;
+            font-size: 25px;
             font-weight: bold;
+
+            display: flex;
+            align-items: center;
         }
 
         .menu {
             list-style: none;
             display: flex;
             gap: 20px;
+            font-size: 17px;
         }
 
         .menu a {
@@ -116,50 +150,84 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-
-            gap: clamp(10px, 3vw, 40px);
+            gap: clamp(20px, 3vw, 60px);
         }
 
-        .box1{
+        .box1 {
             flex: 1 1 250px;
             max-width: 300px;
-
             aspect-ratio: 5 / 4;
             background-color: #A4C8F0;
             border-radius: 20px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end; 
+            align-items: center; 
+            
+            text-align: center; 
+            padding: 20px 15px 40px 15px; 
+            box-sizing: border-box;
         }
 
         .box2{
             flex: 1 1 250px;
             max-width: 300px;
-
             aspect-ratio: 5 / 4;
             background-color: #A4C8F0;
             border-radius: 20px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end; 
+            align-items: center; 
+            
+            text-align: center; 
+            padding: 20px 15px 40px 15px; 
+            box-sizing: border-box;
         }
 
         .box3{
             flex: 1 1 250px;
             max-width: 300px;
-
             aspect-ratio: 5 / 4;
             background-color: #A4C8F0;
             border-radius: 20px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end; 
+            align-items: center; 
+            
+            text-align: center; 
+            padding: 20px 15px 40px 15px; 
+            box-sizing: border-box;
         }
 
         .box4{
             flex: 1 1 250px;
             max-width: 300px;
-
             aspect-ratio: 5 / 4;
             background-color: #A4C8F0;
             border-radius: 20px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end; 
+            align-items: center; 
+            
+            text-align: center; 
+            padding: 20px 15px 40px 15px; 
+            box-sizing: border-box;
         }
     </style>
 </head>
 <body>
     <nav class="navbar">
-        <div class="logo">브레인 코드</div>
+        <div class="left">
+            <img src="img/뇌-파랑.png" class="brain-logo">
+            <div class="logo">브레인 코드</div>
+        </div>
     
         <ul class="menu">
             <li><a href="로그인 페이지.html">로그인</a></li>
@@ -173,7 +241,7 @@
         인지 훈련 게임 플랫폼
     </h1>
 
-    <p>
+    <p class="p1">
         아이의 인지능력과 소통능력을 키워요!<br>
         다양한 게임으로 즐겁게 학습해요!<br>
     </p>
@@ -189,13 +257,25 @@
 
     <div class="section">
         <div class="container">
-            <div class="box1"></div>
+            <div class="box1">
+                <h3>의사소통 어려움</h3>
+                <p class="p2">말 이해와 표현 능력 저하</p>
+            </div>
 
-            <div class="box2"></div>
+            <div class="box2">
+                <h3>기초학습 어려움</h3>
+                <p class="p2">놀이 학습 집중력 부족</p>
+            </div>
 
-            <div class="box3"></div>
+            <div class="box3">
+                <h3>부모님의 부담</h3>
+                <p class="p2">학습 지도 부담</p>
+            </div>
 
-            <div class="box4"></div>
+            <div class="box4">
+                <h3>동기 부족</h3>
+                <p class="p2">학습에 흥미를 느끼기 어려움</p>
+            </div>
         </div>
     </div>
 </body>
