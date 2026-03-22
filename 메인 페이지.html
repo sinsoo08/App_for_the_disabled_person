@@ -50,7 +50,7 @@
             font-size: 3rem;
         }
 
-        button {
+        .button {
             height: 48px;
             padding: 0 24px;
             font-size: 16px;
@@ -225,6 +225,52 @@
             align-items: center;
             text-align: center;
         }
+
+        .phone {
+            position: relative;
+            width: 600px;
+            margin: 0 auto;
+        }
+
+        #screen {
+            width: 100%;
+            display: block;
+        }
+
+        .button2 {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 30px;
+            background: rgba(0,0,0,0.3);
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .prev {
+            left: 0;
+        }
+
+        .next {
+            right: 0px;
+        }
+
+        #screen {
+            transition: opacity 0.3s ease;
+        }
+
+        .phone button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 30px;
+            background: rgba(0,0,0,0.3);
+            color: white;
+            border: none;
+            cursor: pointer;
+            z-index: 10;
+        }
     </style>
 </head>
 <body>
@@ -256,7 +302,7 @@
 
     <br>
 
-    <button onclick="location.href='로그인 페이지.html'">
+    <button class="button" onclick="location.href='로그인 페이지.html'">
         지금 무료로 시작하기<span class="arrow">></span>
     </button>
 
@@ -289,5 +335,15 @@
     <br><br>
 
     <h3 class="text">발달장애 아동의 학습을 돕기 위해 만들었어요!</h3>
+
+    <br>
+    
+    <div class="phone">
+        <img id="screen" src="img/핸드폰.png" />
+
+        <button class="prev button2" onclick="prevSlide()">←</button>
+        <button class="next button2" onclick="nextSlide()">→</button>
+    </div>
+
 </body>
 </html>
